@@ -3,13 +3,14 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
-//import Slider from './components/Slider/Slider';
+import Slider from './components/Slider/Slider';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import ShopCategory from './Pages/ShopCategory';
 import Shop from './Pages/Shop';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -29,7 +30,9 @@ function App() {
           <Route path='/login' element={<LoginSignup/>}/>
         </Route>
       </Routes>
+      <Footer/>
       </BrowserRouter>
+      
       
     </div>
   );
